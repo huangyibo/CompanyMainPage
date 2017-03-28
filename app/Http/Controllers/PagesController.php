@@ -59,6 +59,6 @@ class PagesController extends Controller
     public function search(Request $request)
     {
         $query = $request->input('q');
-        return redirect()->away('https://www.bing.com/search?q=site:news.laravel-china.org ' . $query, 302);
+        return redirect()->away('https://www.bing.com/search?' . $query, 302);
     }
 }

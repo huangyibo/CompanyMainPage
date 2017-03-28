@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', $category->name . '分类的文章 | ')
+@section('title', isset($category) ? $category->name : '全部活动' . ' | ')
 
 @section('content')
 
@@ -8,7 +8,7 @@
 
     <div class="col-md-12">
         <div class="category-header">
-            <h2 class=" font3"><i class="fa fa-folder-open-o"></i> {{ $category->name }}</h2>
+            <h2 class=" font3"><i class="fa fa-folder-open-o"></i> {{ isset($category) ? $category->name : '全部活动' }}</h2>
         </div>
     </div>
 
@@ -20,6 +20,12 @@
         @include('common._posts')
     </main>
 
+</div>
+
+<div class="row colom-container" style="margin:0 auto;width: 100%">
+    <div class="pull-right text-center col-md-6 col-md-offset-3">
+    {!! $posts->render() !!}
+    </div>
 </div>
 
 @endsection

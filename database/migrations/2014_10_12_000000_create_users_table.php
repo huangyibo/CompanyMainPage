@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->nullable()->index();
             $table->string('phone')->nullable()->index();
             $table->string('remember_token')->nullable();
+            $table->enum('gender', ['unselected', 'male', 'female'])->default('unselected')->nullable();
             $table->enum('is_banned', ['yes',  'no'])->default('no')->index();
             $table->string('image_url')->nullable();
             $table->integer('notification_count')->default(0)->index();

@@ -14,14 +14,14 @@ return array(
      *
      *  @type string
      */
-    'domain' => '',
+    'domain' => '',                                                                                                                                                                                                                                                                                                                                     '',
 
     /*
      * Page title
      *
      * @type string
      */
-    'title' => 'EST 后台管理',
+    'title' => '活动发布系统 后台管理',
 
     /*
      * The path to your model config directory
@@ -58,7 +58,7 @@ return array(
      * 		'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
      *	)
      */
-    'menu' => [
+    'menu' => array(
         '用户管理' => [
             'users',
             'roles',
@@ -67,15 +67,12 @@ return array(
         '内容管理' => [
             'posts',
             'categories',
-            'links',
-            'issues',
         ],
         '站点管理' => [
-            'tags',
             'site_statuses',
             'revisions',
         ],
-    ],
+    ),
 
     /*
      * The permission option is the highest-level authentication check that lets you define a closure that should return true if the current user
@@ -84,16 +81,6 @@ return array(
      * @type closure
      */
     'permission' => function () {
-        if (App::environment('local')) {
-            if (!Auth::check()) {
-                $user = App\Models\User::first();
-                $user && Auth::login($user);
-                return true;
-            } else {
-                return true;
-            }
-        }
-
         if (!Auth::check() || !Auth::user()->can('visit_admin')) {
             return false;
         }

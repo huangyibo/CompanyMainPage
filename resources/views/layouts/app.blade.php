@@ -45,7 +45,7 @@
 @if (Auth::guest())
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
-            <div class="navbar-header">
+            {{--<div class="navbar-header">
 
                 <!-- Collapsed Hamburger -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -60,18 +60,18 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     InfyOm Generator
                 </a>
-            </div>
+            </div>--}}
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
+                    <li><a href="{{ url('/') }}">首页</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ url('/login') }}">Login</a></li>
-                    <li><a href="{{ url('/register') }}">Register</a></li>
+                    <li><a href="{{ url('/login') }}">登录</a></li>
+                    <li><a href="{{ url('/register') }}">注册</a></li>
                 </ul>
             </div>
         </div>
@@ -86,7 +86,7 @@
                class="btn btn-default" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
             <span class="pull-right" style="margin-right: 10px;margin-top: 15px">
-                <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
+                <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>退出系统</a>
             </span>
         </header>
     </div>

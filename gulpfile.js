@@ -9,8 +9,11 @@ var basejs = [
     'resources/assets/js/vendor/masonry.min.js',
     'resources/assets/js/vendor/simplemde.min.js',
     'resources/assets/js/vendor/analytics.js',
+    'resources/assets/js/vendor/jquery.form.min.js',
+    // 'resources/assets/js/vendor/analytics.js',
     // 'resources/assets/js/vendor/moment.min.js',
     // 'resources/assets/js/vendor/upload-image.js',
+    // 'node_modules/wangeditor/dist/wangEditor.min.js',
     'node_modules/sweetalert/dist/sweetalert.min.js',
     'node_modules/social-share.js/dist/js/social-share.min.js',
 ];

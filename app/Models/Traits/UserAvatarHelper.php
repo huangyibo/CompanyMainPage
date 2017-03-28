@@ -23,7 +23,7 @@ trait UserAvatarHelper
 
         //Delete old file
         if ($this->avatar) {
-            @unlink(public_path('uploads/avatars/') . $this->avatar);
+            @unlink(public_path('uploads/avatars/'.$this->avatar));
         }
 
         //Save to database

@@ -16,9 +16,9 @@ use App\Models\Traits\UserAvatarHelper;
 use App\Jobs\SendActivateMail;
 
 class User extends BaseModel implements AuthenticatableContract,
-                                    AuthorizableContract
+    AuthorizableContract
 {
-    use UserRememberTokenHelper,UserSocialiteHelper,UserAvatarHelper;
+    use UserRememberTokenHelper, UserSocialiteHelper, UserAvatarHelper;
     use PresentableTrait;
     public $presenter = 'App\Presenters\UserPresenter';
 
@@ -31,7 +31,9 @@ class User extends BaseModel implements AuthenticatableContract,
         restore as private restoreEntrust;
         EntrustUserTrait::can as may;
     }
-    use SoftDeletes { restore as private restoreSoftDelete; }
+    use SoftDeletes {
+        restore as private restoreSoftDelete;
+    }
 
     protected $table = 'users';
     protected $guarded = ['id', 'is_banned'];
@@ -59,6 +61,7 @@ class User extends BaseModel implements AuthenticatableContract,
             dispatch(new SendActivateMail($user));
         });
     }
+
     /**
      * ----------------------------------------
      * UserInterface
@@ -103,5 +106,29 @@ class User extends BaseModel implements AuthenticatableContract,
         $show_data = Cache::get($show_key);
         $show_data[$this->id] = $now;
         Cache::forever($show_key, $show_data);
+    }
+
+    public function getUpdatedAttribute($date)
+    {
+        return $this->formatDate($date);
+    }
+
+    public function getCreatedAtAttribute($date)
+    {
+        return $this->formatDate($date);
+    }
+
+    public function getLastActivedAtAttribute($date)
+    {
+        return $this->formatDate($date);
+    }
+
+    private function formatDate($date)
+    {
+        if (Carbon::now() < Carbon::parse($date)->addDays(10)) {
+            return Carbon::parse($date);
+        }
+
+        return Carbon::parse($date)->diffForHumans();
     }
 }

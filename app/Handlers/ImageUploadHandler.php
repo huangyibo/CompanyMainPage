@@ -17,7 +17,7 @@ class ImageUploadHandler
 
         $allowed_extensions = ["png", "jpg", "gif"];
         if (!$this->checkAllowedExtensions($allowed_extensions)) {
-            return ['error' => 'You may only upload png, jpg or gif.'];
+            return ['error' => '图片格式仅限为 png, jpg or gif.'];
         }
 
         $avatar_name = $user->id . '_' . time() . '.' . $file->getClientOriginalExtension() ?: 'png';

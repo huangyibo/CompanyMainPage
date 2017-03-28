@@ -77,12 +77,12 @@ return [
             'title' => '分类',
             'name_field' => 'name',
         ),
-        'issue' => array(
+        /*'issue' => array(
             'type' => 'relationship',
             'title' => '周刊',
             'name_field' => 'name',
             'value' => '0',
-        ),
+        ),*/
         'created_at' => [
             'title' => '发布时间',
             'type' => 'datetime',

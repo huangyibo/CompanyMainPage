@@ -1,4 +1,4 @@
-<?php
+?php
 namespace Illuminate\Contracts\Container;
 
 use Closure;

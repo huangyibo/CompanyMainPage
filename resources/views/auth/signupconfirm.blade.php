@@ -22,13 +22,13 @@
                     </div>
                 </div>
 
-                <div class="form-group {{{ $errors->has('name') ? 'has-error' : '' }}}">
+                <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                     <label class="control-label" for="name">用户名</label>
                      <input class="form-control" name="name" type="text" value="{{ $oauthData['name'] ?: '' }}">
                     {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
                 </div>
 
-                <div class="form-group {{{ $errors->has('email') ? 'has-error' : '' }}}">
+                <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
                     <label class="control-label" for="email">Email</label>
                     <input class="form-control" name="email" type="text" value="{{ $oauthData['email'] ?: '' }}">
                     {!! $errors->first('email', '<span class="help-block">:message</span>') !!}

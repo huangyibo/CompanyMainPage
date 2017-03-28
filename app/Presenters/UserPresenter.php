@@ -11,8 +11,13 @@ class UserPresenter extends Presenter
     public function gravatar($size = 100)
     {
         if ($this->avatar && strpos($this->avatar, 'http') !== false ) {
-            return $this->avatar;
+            return $this->avatar."?w/{$size}/h/{$size}";
         }
+
+        if ($this->avatar){
+            return '/uploads/avatars/'.$this->avatar;
+        }
+
         if (config('app.url_static') && $this->avatar) {
             //Using Qiniu image processing service.
             return cdn('uploads/avatars/'.$this->avatar)."?imageView2/1/w/{$size}/h/{$size}";

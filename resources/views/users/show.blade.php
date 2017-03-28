@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', $user->name . '的文章 | ')
+@section('title', $user->name . ' 发布的活动 | ')
 
 @section('content')
 
@@ -8,7 +8,7 @@
 
     <div class="col-md-12">
         <div class="category-header">
-            <h2 class=" font3"><i class="fa fa-user"></i> {{ $user->name }} 的文章</h2>
+            <h2 class=" font3"><i class="fa fa-user"></i> {{ $user->name }} 发布的活动</h2>
         </div>
     </div>
 

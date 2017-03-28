@@ -26,6 +26,7 @@ class CreatePostsTable extends Migration {
             $table->integer('order')->unsigned()->default(0);
             $table->tinyInteger('is_recommended')->unsigned()->default(0);
             $table->text('excerpt')->nullable();
+            $table->integer('apply_num')->nullable()->unsigned()->default(0);
             $table->timestamps();
         });
 	}

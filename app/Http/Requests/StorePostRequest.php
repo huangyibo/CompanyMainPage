@@ -17,6 +17,7 @@ class StorePostRequest extends Request
             'title'            => 'string|required',
             'category_id'     => 'alpha_num|required',
             'body_original'   => 'required',
+            'cover_image' => 'image',
         ];
     }
 }

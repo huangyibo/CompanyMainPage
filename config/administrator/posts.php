@@ -6,9 +6,9 @@ use App\Models\Post;
 
 return [
 
-    'title' => '文章',
-    'heading' => '文章',
-    'single' => '文章',
+    'title' => '活动',
+    'heading' => '活动',
+    'single' => '活动',
 
     'model' => Post::class,
 
@@ -21,7 +21,7 @@ return [
 
     'global_actions' => array(
         'create_posts' => array(
-            'title' => '新建文章',
+            'title' => '新建活动',
             //the Eloquent query builder is passed to the closure
             'action' => function($query)
             {
@@ -88,14 +88,14 @@ return [
             'title' => '文章类型',
             'type'     => 'enum',
             'options'  => [
-                'undefined' => '一般文章',
-                'big_banner'  => '首页大图文章',
+                'undefined' => '一般活动',
+                'big_banner'  => '首页大图活动',
                 'side_banner'  => '首页顶部右边三个',
             ],
             'value' => 'undefined',
         ),
         'cover' => [
-            'title'             => '文章封面',
+            'title'             => '活动封面',
             'type'              => 'image',
             'location'          => public_path() . '/uploads/covers/',
             'naming'            => 'random',
@@ -108,12 +108,12 @@ return [
             'title' => '分类',
             'name_field' => 'name',
         ),
-        'issue' => array(
+        /*'issue' => array(
             'type' => 'relationship',
             'title' => '周刊',
             'name_field' => 'name',
             'value' => '0',
-        ),
+        ),*/
         'user' => [
             'title' => '作者',
             'type' => 'relationship',
@@ -121,7 +121,7 @@ return [
             'select' => "(:table).name",
         ],
         'created_at' => [
-            'title' => '文章发布时间',
+            'title' => '活动发布时间',
             'type' => 'datetime',
         ],
     ],
@@ -131,11 +131,11 @@ return [
             'title' => '标题',
         ],
         'position' => array(
-            'title' => '文章类型',
+            'title' => '活动类型',
             'type'     => 'enum',
             'options'  => [
-                'undefined' => '一般文章',
-                'big_banner'  => '首页大图文章',
+                'undefined' => '一般活动',
+                'big_banner'  => '首页大图活动',
                 'side_banner'  => '首页顶部右边三个',
             ],
         ),

@@ -13,9 +13,11 @@
     @foreach ($posts as $post)
         <article class="col-md-4 pic-block">
             <a class="shodow-box" href="{{ route('posts.show', [$post->id]) }}">
-                <img class="img-responsive" alt="{{ $post->title }}" src="{{ img_crop($post->cover, 720, 376) }}"/>
+                <img class="img-responsive" alt="{{ $post->title }}" style="text-align: center;width: inherit" src="{{ img_crop($post->cover, 1300, 396) }}"/>
                 <h4>{{ $post->title }}</h4>
+                {{--<p style="color: rgb(171,171,171);">{{ time_show($post->created_at) }}</p>--}}
             </a>
+
         </article>
     @endforeach
 

@@ -15,4 +15,5 @@ class BaseModel extends Model
     {
         return $query->orderBy('order', 'desc');
     }
+
 }

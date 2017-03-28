@@ -5,7 +5,10 @@
 @stop
 
 @section('content')
-<div class="users-show">
+<div class="row colom-container users-show">
+    <aside class="col-md-3 main-col">
+        @include('users.partials.setting_nav', ['currentUser' => Auth::user()])
+    </aside>
 
   <div class="main-col col-md-9 left-col">
 
@@ -13,26 +16,27 @@
 
       <div class="panel-body padding-bg">
 
-        <h2><i class="fa fa-picture-o" aria-hidden="true"></i>请选择照片</h2>
+        <h2><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;&nbsp;请选择照片</h2>
         <hr>
 
         @include('layouts.partials.errors')
 
-        <form method="POST" action="{{ route('users.update_avatar', $user->id) }}" enctype="multipart/form-data" accept-charset="UTF-8">
-            <input name="_method" type="hidden" value="PATCH">
+        <form method="post" action="{{ url('/users/'.Auth::user()->id.'/update_avatar') }}"
+              enctype="multipart/form-data" accept-charset="UTF-8">
+            {{--<input name="_method" type="hidden" value="PATCH">--}}
             {!! csrf_field() !!}
 
-            <div id="image-preview-div">
+            <div id="image-preview-div" STYLE="margin-bottom: 5px">
               <label for="exampleInputFile">选择图片：</label>
               <br>
-              <img id="preview-img" class="avatar-preview-img" src="{{$currentUser->present()->gravatar(380)}}">
+              <img id="preview-img" class="avatar-preview-img" style="width: 150px; height: 150px; border: double RGB(233,234,237)" src="{{$currentUser->present()->gravatar(150)}}">
             </div>
             <div class="form-group">
               <input type="file" name="avatar" id="file" required>
             </div>
             <br>
 
-            <button class="btn btn-lg btn-primary" id="upload-button" type="submit" disabled>上传图片</button>
+            <button class="btn btn-lg btn-primary" id="upload-button" type="submit">上传图片</button>
 
             <div class="alert alert-info" id="loading" style="display: none;" role="alert">
               正在上传
@@ -52,3 +56,4 @@
 </div>
 
 @stop
+

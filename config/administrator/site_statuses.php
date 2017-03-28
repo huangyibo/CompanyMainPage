@@ -37,7 +37,7 @@ return [
         'register_count' => [
             'title'    => '注册用户数',
         ],
-        'github_regitster_count' => [
+        /*'github_regitster_count' => [
             'title'    => 'Github 注册数',
         ],
         'wechat_registered_count' => [
@@ -45,7 +45,7 @@ return [
         ],
         'wechat_registered_weibo' => [
             'title'    => '微博注册数',
-        ],
+        ],*/
         'operation' => [
             'title'    => '管理',
             'sortable' => false,
