@@ -60,6 +60,11 @@
     </div>
     <div class="row colom-container">
         {{--margin-left: 4.16666666%;--}}
+        @if(isset($apply_status))
+            <div class="alert alert-success" role="alert">
+                活动报名信息已经发送到您的邮箱，请查收！
+            </div>
+        @endif
         <main class="col-md-9 main-content">
 
             <article id="70" class="post">

@@ -6,7 +6,7 @@
                 <article class="col-md-6 col-md-offset-3 text-center foot-logo">
 
                     <p class="friend-links">
-                        <a href="#">A站点</a>
+                        <a href="{{ url('/company/about') }}">公司主页</a>
                         <a href="#">B站点</a>
                     </p>
 

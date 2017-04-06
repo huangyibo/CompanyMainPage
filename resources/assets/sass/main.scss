@@ -6,24 +6,28 @@
   border: 1px solid white;
   border-radius: 50%;
 }
-.post-title-link{
+
+.post-title-link {
   font-size: 16px;
-  color: rgb(241,122,122);
+  color: rgb(241, 122, 122);
 }
-.post-title-link:hover{
-  color: rgb(241,122,122);
+
+.post-title-link:hover {
+  color: rgb(241, 122, 122);
   text-decoration: underline;
-  text-decoration-color: rgb(241,122,122);
+  text-decoration-color: rgb(241, 122, 122);
 }
 
 .user-center-link,
-.user-center-link:hover{
-  color: rgb(241,122,122);
+.user-center-link:hover {
+  color: rgb(241, 122, 122);
 }
-.user-center-link:hover{
+
+.user-center-link:hover {
   text-decoration: underline;
-  text-decoration-color: rgb(241,122,122);
+  text-decoration-color: rgb(241, 122, 122);
 }
+
 /*
 td{
   width:100%;
@@ -45,7 +49,7 @@ tbody tr td {
   text-align: center;
   font-size: 15px;
   vertical-align: middle;
-  height:48px;
+  height: 48px;
   line-height: 48px;
 }
 
@@ -57,16 +61,17 @@ td a {
 
 }
 
-table{
-  width:30em;
-  table-layout:fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+table {
+  width: 30em;
+  table-layout: fixed; /* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
 }
-td{
-  width:100%;
-  word-break:keep-all;/* 不换行 */
-  white-space:nowrap;/* 不换行 */
-  overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
-  text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+
+td {
+  width: 100%;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
 }
 
 .text-overflow {
@@ -207,7 +212,7 @@ a.avatar-edit i.fa {
 }
 
 //时间显示
-.number{
+.number {
   font-size: 14px;
   margin: 6px 0px;
 }
@@ -1635,6 +1640,13 @@ body {
       margin-top: 12px;
     }
   }
+
+  h4 {
+    border-bottom: 2px dashed #efecec;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
 }
 
 .add-top-half {
@@ -2416,6 +2428,10 @@ footer .icons {
   h2 {
     font-size: 1.5em;
   }
+
+  h4 {
+    font-size: 18px;
+  }
 }
 
 .widget .btn-default:hover {
@@ -2609,4 +2625,33 @@ a, a:hover {
     padding: 20px 30px;
   }
 }
+
+/* 公司主页 css样式*/
+// 公司主页: content body css样式
+.company-about-carousel {
+  margin: 10px 10px;
+}
+
+.company-about-speech {
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+
+.company-about-intro-table {
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+
+#company-about-intro-table td{
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.text-wrap {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+
 

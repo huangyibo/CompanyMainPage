@@ -51,3 +51,6 @@ Route::resource("applicants", 'ApplicantsController', ['only' => ['store']]);
 
 // update user
 //Route::post('users/{id}/update', 'UsersController@update');
+
+// Company Main Page: the introduction about company
+Route::get('company/about', 'CompanyController@getCompanyIntroduction');

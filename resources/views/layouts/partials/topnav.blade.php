@@ -80,12 +80,12 @@
                                 </li>
                             </ul>
                         </li>
-                    @else
+                    {{--@else
                         <li>
                             <a href="{{ url('/login') }}" class="button">
                                 <i class="fa fa-sign-in" aria-hidden="true">&nbsp;&nbsp;登录</i>
                             </a>
-                        </li>
+                        </li>--}}
                     @endif
                 </ul>
 

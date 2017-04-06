@@ -10843,6 +10843,11 @@ body {
       font-size: 15px;
       color: #716e6e;
       margin-top: 12px; }
+  .block-header h4 {
+    border-bottom: 2px dashed #efecec;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    font-size: 18px; }
 
 .add-top-half {
   margin-top: 20px; }
@@ -11468,6 +11473,8 @@ footer .icons {
   color: #f46660; }
   .category-header h2 {
     font-size: 1.5em; }
+  .category-header h4 {
+    font-size: 18px; }
 
 .widget .btn-default:hover {
   color: #fff;
@@ -11607,5 +11614,25 @@ a, a:hover {
 
 .issues-index-page article, .issues-show-page article {
   padding: 20px 30px; }
+
+/* 公司主页 css样式*/
+.company-about-carousel {
+  margin: 10px 10px; }
+
+.company-about-speech {
+  margin-top: 20px;
+  padding: 10px 10px; }
+
+.company-about-intro-table {
+  margin-top: 20px;
+  padding: 10px 10px; }
+
+#company-about-intro-table td {
+  word-wrap: break-word;
+  word-break: break-all; }
+
+.text-wrap {
+  word-wrap: break-word;
+  word-break: break-all; }
 
 /*# sourceMappingURL=styles.css.map */

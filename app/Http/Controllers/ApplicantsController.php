@@ -12,6 +12,7 @@ use App\Models\Post;
 use App\Models\Applicant;
 use Auth;
 use Validator;
+use Mail;
 
 use App\Http\Requests\StoreApplicantRequest;
 class ApplicantsController extends Controller
@@ -46,7 +47,10 @@ class ApplicantsController extends Controller
         $apply_num = $post->apply_num + 1;
         $post->update(['apply_num' => $apply_num]);
 
-        return redirect(route('posts.show', $data['post_id']));
+        $this->sendMail($applicant, $post);
+
+        //route('posts.show', $data['post_id'])
+        return redirect()->back()->withInput(['apply_status'=>true]);
     }
 
     public function listByPostId($post_id)
@@ -58,6 +62,15 @@ class ApplicantsController extends Controller
             ->simplePaginate(20);
 
         return view('users.user_center', compact('applicants', 'post', 'user'));
+    }
+
+    private function sendMail(Applicant $applicant, Post $post){
+        $flag = Mail::send('emails.post_apply_success',
+            ['applicant'=>$applicant, 'post'=>$post],
+            function ($message) use ($applicant, $post){
+                $message->to($applicant->email, $applicant->name)->subject('[活动发布平台]您已成功报名 '.$post->title.'!');
+            });
+        return $flag;
     }
 
 }
