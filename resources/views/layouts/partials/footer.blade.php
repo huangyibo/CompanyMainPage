@@ -6,7 +6,8 @@
                 <article class="col-md-6 col-md-offset-3 text-center foot-logo">
 
                     <p class="friend-links">
-                        <a href="{{ url('/') }}">公司主页</a>
+                        <a href="{{ url('/') }}">XXX有限公司主页</a>
+                        <a href="http://139.162.112.175/" target="_blank">活动发布平台</a>
                     </p>
 
                     <a href="#"><img alt="" title="" src="/assets/images/icon.png" /></a>
