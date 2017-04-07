@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Console\Commands;
+namespace CompanyMainPage\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Models\User;
+use CompanyMainPage\Models\User;
 use Cache;
 
 class SyncUserActivedTime extends Command

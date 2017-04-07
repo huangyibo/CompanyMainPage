@@ -6,7 +6,7 @@
  * Time: 14:33
  */
 
-namespace App\Http\Controllers;
+namespace CompanyMainPage\Http\Controllers;
 
 
 class CompanyController extends Controller

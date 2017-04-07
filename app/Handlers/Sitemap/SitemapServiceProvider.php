@@ -1,4 +1,6 @@
-<?php namespace App\Handlers\Sitemap;
+<?php
+
+namespace CompanyMainPage\Handlers\Sitemap;
 
 use Illuminate\Support\ServiceProvider;
 

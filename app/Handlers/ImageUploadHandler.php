@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Handlers;
+namespace CompanyMainPage\Handlers;
 
-use App\Models\User;
-use App\Models\Topic;
+use CompanyMainPage\Models\User;
+use CompanyMainPage\Models\Topic;
 use Image;
 use Auth;
 

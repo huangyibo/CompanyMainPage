@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests;
+namespace CompanyMainPage\Http\Requests;
 
-use App\Http\Requests\Request;
+use CompanyMainPage\Http\Requests\Request;
 
 class UpdatePasswordRequest extends Request
 {

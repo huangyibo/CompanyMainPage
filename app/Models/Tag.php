@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace CompanyMainPage\Models;
 
 class Tag extends TaggingTag
 {

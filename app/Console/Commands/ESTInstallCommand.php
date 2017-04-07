@@ -1,4 +1,4 @@
-<?php namespace App\Console\Commands;
+<?php namespace CompanyMainPage\Console\Commands;
 
 class ESTInstallCommand extends BaseCommand
 {

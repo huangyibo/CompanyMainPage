@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace CompanyMainPage\Models;
 use Carbon\Carbon;
 
 class Applicant extends BaseModel

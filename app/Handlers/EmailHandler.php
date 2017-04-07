@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Handlers;
+namespace CompanyMainPage\Handlers;
 
-use App\Models\User;
+use CompanyMainPage\Models\User;
 use Illuminate\Mail\Message;
 use Mail;
 use Naux\Mail\SendCloudTemplate;

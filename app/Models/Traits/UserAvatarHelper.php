@@ -1,4 +1,4 @@
-<?php namespace App\Models\Traits;
+<?php namespace CompanyMainPage\Models\Traits;
 
 use GuzzleHttp\Client;
 use Image;
@@ -33,7 +33,7 @@ trait UserAvatarHelper
 
     public function updateAvatar($file)
     {
-        $upload_status = app('App\Handlers\ImageUploadHandler')->uploadAvatar($file, $this);
+        $upload_status = app('CompanyMainPage\Handlers\ImageUploadHandler')->uploadAvatar($file, $this);
         if ($upload_status['error']) {
             return ['error' => $upload_status['error']];
         }

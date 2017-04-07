@@ -1,6 +1,6 @@
-<?php namespace App\Models\Traits;
+<?php namespace CompanyMainPage\Models\Traits;
 
-use App\Models\User;
+use CompanyMainPage\Models\User;
 
 trait UserSocialiteHelper
 {

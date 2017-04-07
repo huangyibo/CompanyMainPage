@@ -1,4 +1,4 @@
-<?php namespace App\Handlesr\Markdown;
+<?php namespace CompanyMainPage\Handlesr\Markdown;
 
 use Illuminate\Support\ServiceProvider;
 use Event;
@@ -10,13 +10,13 @@ class MarkdownServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('App\Handlers\Markdown\Markdown', function ($app) {
-            return new \App\Handlers\Markdown\Markdown;
+        $this->app->singleton('CompanyMainPage\Handlers\Markdown\Markdown', function ($app) {
+            return new \CompanyMainPage\Handlers\Markdown\Markdown;
         });
     }
 
     public function provides()
     {
-        return ['App\Handlers\Markdown'];
+        return ['CompanyMainPage\Handlers\Markdown'];
     }
 }

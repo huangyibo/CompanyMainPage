@@ -1,4 +1,4 @@
-<?php namespace App\Models\Traits;
+<?php namespace CompanyMainPage\Models\Traits;
 
 trait UserRememberTokenHelper
 {

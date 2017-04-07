@@ -1,4 +1,4 @@
-<?php namespace App\Handlers\Sitemap;
+<?php namespace CompanyMainPage\Handlers\Sitemap;
 
 use Roumen\Sitemap\Sitemap;
 use Illuminate\Config\Repository;

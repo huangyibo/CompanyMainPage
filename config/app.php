@@ -143,11 +143,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-        App\Providers\ComposerServiceProvider::class,
+        CompanyMainPage\Providers\AppServiceProvider::class,
+        CompanyMainPage\Providers\AuthServiceProvider::class,
+        CompanyMainPage\Providers\EventServiceProvider::class,
+        CompanyMainPage\Providers\RouteServiceProvider::class,
+        CompanyMainPage\Providers\ComposerServiceProvider::class,
 
         Orangehill\Iseed\IseedServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
@@ -163,7 +163,7 @@ return [
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Roumen\Sitemap\SitemapServiceProvider::class,
-        App\Handlers\Sitemap\SitemapServiceProvider::class,
+        CompanyMainPage\Handlers\Sitemap\SitemapServiceProvider::class,
         \EstGroupe\Taggable\Providers\TaggingServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,

@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\User;
-use App\Models\Issue;
+use CompanyMainPage\Models\User;
+use CompanyMainPage\Models\Issue;
 use Carbon\Carbon;
 
 /*

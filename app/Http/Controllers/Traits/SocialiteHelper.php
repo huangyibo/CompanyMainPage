@@ -1,9 +1,9 @@
-<?php namespace App\Http\Controllers\Traits;
+<?php namespace CompanyMainPage\Http\Controllers\Traits;
 
 use Auth;
 use Socialite;
 use Illuminate\Http\Request;
-use App\Models\User;
+use CompanyMainPage\Models\User;
 use Flash;
 
 trait SocialiteHelper

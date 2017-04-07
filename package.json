@@ -20,6 +20,6 @@
   "description": "Basic Framework",
   "version": "1.0.0",
   "main": "gulpfile.js",
-  "author": "Monkey",
+  "author": "Bob Huang",
   "license": "MIT"
 }

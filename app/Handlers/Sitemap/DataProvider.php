@@ -1,7 +1,7 @@
-<?php namespace App\Handlers\Sitemap;
+<?php namespace CompanyMainPage\Handlers\Sitemap;
 
 use Illuminate\Routing\UrlGenerator;
-use App\Models\Post;
+use CompanyMainPage\Models\Post;
 
 class DataProvider
 {

@@ -1,4 +1,4 @@
-<div class="company-about-intro-table">
+<div id="company-about-intro-table" class="company-about-intro-table">
     <div class="category-header">
         <h4 class=" font3"><i class="fa fa-folder-open-o"></i> 公司简介</h4>
     </div>

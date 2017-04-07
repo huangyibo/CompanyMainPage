@@ -1,8 +1,8 @@
-<?php namespace App\Console\Commands;
+<?php namespace CompanyMainPage\Console\Commands;
 
-use App\Models\Permission;
-use App\Models\Role;
-use App\Models\User;
+use CompanyMainPage\Models\Permission;
+use CompanyMainPage\Models\Role;
+use CompanyMainPage\Models\User;
 use App;
 use Illuminate\Database\Eloquent\Collection;
 

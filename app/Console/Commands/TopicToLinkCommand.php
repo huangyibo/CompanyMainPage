@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Console\Commands;
+namespace CompanyMainPage\Console\Commands;
 
 use Illuminate\Console\Command;
 use GuzzleHttp\Client;
-use App\Models\Link;
+use CompanyMainPage\Models\Link;
 
 class TopicToLinkCommand extends Command
 {

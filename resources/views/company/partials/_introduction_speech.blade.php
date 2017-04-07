@@ -1,4 +1,5 @@
-<div class="company-about-speech">
+
+<div id="company-about-speech" class="company-about-speech">
     <div class="category-header">
         <h4 class=" font3"><i class="fa fa-folder-open-o"></i> 代表致辞</h4>
     </div>

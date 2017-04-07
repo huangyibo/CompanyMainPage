@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', '公司简介' . ' | ')
+@section('title', '公司主页' . ' | ')
 
 @section('content')
     <div class="row colom-container">
@@ -13,7 +13,7 @@
                 <div class="panel-body ">
 
                     <div class="block-header">
-                        <h2>公司简介 </h2>
+                        <h2>公司主页 </h2>
                     </div>
 
                     <div class="content-body">

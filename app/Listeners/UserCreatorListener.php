@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners;
+namespace CompanyMainPage\Listeners;
 
 interface UserCreatorListener
 {

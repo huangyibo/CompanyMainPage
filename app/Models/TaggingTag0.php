@@ -1,6 +1,6 @@
-<?php namespace App\Models;
+<?php namespace CompanyMainPage\Models;
 
-use App\Utilities\Tagging;
+use CompanyMainPage\Utilities\Tagging;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Baum\Node;
 

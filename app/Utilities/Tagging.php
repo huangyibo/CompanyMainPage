@@ -1,4 +1,4 @@
-<?php namespace App\Utilities;
+<?php namespace CompanyMainPage\Utilities;
 
 use Overtrue\Pinyin\Pinyin;
 use App;
@@ -174,7 +174,7 @@ class Tagging
      */
     public function tagModelString()
     {
-        return '\App\Models\Tag';
+        return '\CompanyMainPage\Models\Tag';
     }
 
     // Check DB Slug Dulplication

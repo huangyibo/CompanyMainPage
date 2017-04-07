@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace CompanyMainPage\Models;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -10,17 +10,17 @@ use Cache;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
-use App\Models\Traits\UserRememberTokenHelper;
-use App\Models\Traits\UserSocialiteHelper;
-use App\Models\Traits\UserAvatarHelper;
-use App\Jobs\SendActivateMail;
+use CompanyMainPage\Models\Traits\UserRememberTokenHelper;
+use CompanyMainPage\Models\Traits\UserSocialiteHelper;
+use CompanyMainPage\Models\Traits\UserAvatarHelper;
+use CompanyMainPage\Jobs\SendActivateMail;
 
 class User extends BaseModel implements AuthenticatableContract,
     AuthorizableContract
 {
     use UserRememberTokenHelper, UserSocialiteHelper, UserAvatarHelper;
     use PresentableTrait;
-    public $presenter = 'App\Presenters\UserPresenter';
+    public $presenter = 'CompanyMainPage\Presenters\UserPresenter';
 
     use \Venturecraft\Revisionable\RevisionableTrait;
     protected $keepRevisionOf = [

@@ -1,7 +1,7 @@
-<?php namespace App\Creators;
+<?php namespace CompanyMainPage\Creators;
 
 use app\Listeners\UserCreatorListener;
-use App\Models\User;
+use CompanyMainPage\Models\User;
 use Carbon\Carbon;
 
 class UserCreator

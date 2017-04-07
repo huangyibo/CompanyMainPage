@@ -2,8 +2,8 @@
 
 use Laracasts\Presenter\Presenter;
 use Route;
-use App\Models\User;
-use App\Models\Role;
+use CompanyMainPage\Models\User;
+use CompanyMainPage\Models\Role;
 use Cache;
 
 class UserPresenter extends Presenter

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Console\Commands;
+namespace CompanyMainPage\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Models\Issue;
-use App\Models\Post;
-use App\Models\Link;
+use CompanyMainPage\Models\Issue;
+use CompanyMainPage\Models\Post;
+use CompanyMainPage\Models\Link;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Pool;
