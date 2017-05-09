@@ -16,6 +16,19 @@ class CompanyController extends Controller
     }
 
     public function getCompanyIntroduction(){
-        return view('company.componay_introduction');
+        return view('company.company_home_page');
     }
+
+    public function getCompanyBusinessContent(){
+        return view('company.company_business_content');
+    }
+
+    public function getCompanyContactUs(){
+        return view('company.company_contact_us');
+    }
+
+    public function getCompanyClubSummary(){
+        return view('company.company_club_summary');
+    }
+
 }
