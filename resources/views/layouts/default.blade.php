@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('title')活动发布平台</title>
+    <title>@yield('title')XX有限公司主页</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <meta name="description" content="活动发布系统。">
+    <meta name="description" content="xx有限公司主页">
     <meta name="author" content="Bob">
 
     <link rel="shortcut icon" href="/assets/images/favicon.png">
