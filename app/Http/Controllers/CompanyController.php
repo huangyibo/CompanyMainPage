@@ -31,4 +31,8 @@ class CompanyController extends Controller
         return view('company.company_club_summary');
     }
 
+    public function getCompanyActivityInfo(){
+        return view('company.company_activity_info');
+    }
+
 }

@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav" data-smartmenus-id="14739838239025269">
                 <li><a href="{{ url("/") }}">主页</a></li>
                 <li><a href="{{ url("/company/business-content") }}">事業内容</a></li>
-                <li><a href="{{ url("/") }}">イベント情報</a></li>
+                <li><a href="{{ url("/company/activity-info") }}">イベント情報</a></li>
                 <li><a href="{{ url("/company/club-summary") }}">会社概要</a></li>
                 <li><a href="{{ url("/company/contact-us") }}">お問い合わせ</a></li>
                 {{--<li><a href="#company-about-speech">代表致辞</a></li>--}}

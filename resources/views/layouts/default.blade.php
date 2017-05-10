@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('title')XX有限公司主页</title>
+    <title>@yield('title')株式会社YAKUMO</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <meta name="description" content="xx有限公司主页">
