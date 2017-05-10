@@ -2,18 +2,17 @@
 
 namespace CompanyMainPage\Models;
 
-use Illuminate\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Laracasts\Presenter\PresentableTrait;
-use Carbon\Carbon;
 use Cache;
-use Zizaco\Entrust\Traits\EntrustUserTrait;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
+use Carbon\Carbon;
+use CompanyMainPage\Jobs\SendActivateMail;
+use CompanyMainPage\Models\Traits\UserAvatarHelper;
 use CompanyMainPage\Models\Traits\UserRememberTokenHelper;
 use CompanyMainPage\Models\Traits\UserSocialiteHelper;
-use CompanyMainPage\Models\Traits\UserAvatarHelper;
-use CompanyMainPage\Jobs\SendActivateMail;
+use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Laracasts\Presenter\PresentableTrait;
+use Zizaco\Entrust\Traits\EntrustUserTrait;
 
 class User extends BaseModel implements AuthenticatableContract,
     AuthorizableContract
