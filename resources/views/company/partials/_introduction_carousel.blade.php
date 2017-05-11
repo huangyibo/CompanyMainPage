@@ -9,15 +9,15 @@
     <div class="carousel-inner" style="width:100%">
         <div class="item active">
             <img src="{{ asset('assets/images/company/slide/slide_1.jpg') }}" style="width: 100%" alt="First slide">
-            <div class="carousel-caption">标题 1 欢迎访问XXX有限公司</div>
+            <div class="carousel-caption">欢迎访问株式会社YAKUMO</div>
         </div>
         <div class="item">
             <img src="{{ asset('assets/images/company/slide/slide_2.jpeg') }}" alt="Second slide">
-            <div class="carousel-caption">标题 2 欢迎访问XXX有限公司</div>
+            <div class="carousel-caption">欢迎访问株式会社YAKUMO</div>
         </div>
         <div class="item">
             <img src="{{ asset('assets/images/company/slide/slide_3.jpg') }}" alt="Third slide">
-            <div class="carousel-caption">标题 3 欢迎访问XXX有限公司</div>
+            <div class="carousel-caption">欢迎访问株式会社YAKUMO</div>
         </div>
     </div>
     <!-- 轮播（Carousel）导航 -->
