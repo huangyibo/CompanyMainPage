@@ -32,5 +32,6 @@
             <br>
 
         </p>
+        <img src="{{ asset('assets/images/activity/comiday19_statistics.png') }}" style="width: 100%;">
     </div>
 </div>

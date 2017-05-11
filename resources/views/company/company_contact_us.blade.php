@@ -19,7 +19,9 @@
                     <div class="content-body">
 
                         <!-- 公司介绍：图片轮播 -->
-                        @include('company.partials._introduction_carousel')
+                        {{--@include('company.partials._introduction_carousel')--}}
+
+                        @include('company.partials._contact_us')
 
                     </div>
                 </div>

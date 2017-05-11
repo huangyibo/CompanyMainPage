@@ -6,7 +6,7 @@
                 <article class="col-md-6 col-md-offset-3 text-center foot-logo">
 
                     <p class="friend-links">
-                        <a href="{{ url('/') }}">XXX有限公司主页</a>
+                        <a href="{{ url('/') }}">株式会社 YAKUMO主页</a>
                         <a href="http://139.162.112.175/" target="_blank">活动发布平台</a>
                     </p>
 
@@ -29,7 +29,7 @@
                         <a href="#" style="color:#a5a5a5">
                             {{--<img class="brand-icon" src="" >--}}
                             <span style="margin-top: 7px;display: inline-block;">
-                                Copyright &copy;2017 XXX有限公司. | Code licensed under MIT.
+                                Copyright &copy;2017 株式会社YAKUMO. | Code licensed under MIT.
                             </span>
                         </a>
                     </p>
