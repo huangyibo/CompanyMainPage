@@ -6,9 +6,9 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
     <!-- 轮播（Carousel）项目 -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="width:100%">
         <div class="item active">
-            <img src="{{ asset('assets/images/company/slide/slide_1.jpg') }}" alt="First slide">
+            <img src="{{ asset('assets/images/company/slide/slide_1.jpg') }}" style="width: 100%" alt="First slide">
             <div class="carousel-caption">标题 1 欢迎访问XXX有限公司</div>
         </div>
         <div class="item">

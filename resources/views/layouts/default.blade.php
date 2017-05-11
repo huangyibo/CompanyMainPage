@@ -31,7 +31,7 @@
 <section class="mastwrap">
 
     <div class="container">
-
+        @include('company.partials._introduction_carousel')
         @yield('content')
     </div>
 

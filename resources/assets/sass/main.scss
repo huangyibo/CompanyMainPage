@@ -2629,7 +2629,12 @@ a, a:hover {
 /* 公司主页 css样式*/
 // 公司主页: content body css样式
 .company-about-carousel {
-  margin: 10px 10px;
+  margin: 7px 0px;
+  width: 100%;
+}
+.carousel-inner .item img{
+  width: 100%;
+  height: 350px;
 }
 
 .company-about-speech {
