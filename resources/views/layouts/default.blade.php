@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>@yield('title')株式会社YAKUMO</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+   {{-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>--}}
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="description" content="xx有限公司主页">
     <meta name="author" content="Bob">
@@ -16,7 +16,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="assets/touchicons/apple-touch-icon-114-precomposed"/>
     <link rel="apple-touch-icon" sizes="72x72" href="assets/touchicons/apple-touch-icon-72-precomposed"/>
     <link rel="apple-touch-icon" sizes="144x144" href="assets/touchicons/apple-touch-icon-144-precomposed"/>
-
 
     <link rel="stylesheet" href="{{ elixir('assets/css/styles.css') }}">
 
