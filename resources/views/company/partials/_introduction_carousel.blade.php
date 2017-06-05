@@ -12,7 +12,7 @@
             <div class="carousel-caption">欢迎访问株式会社YAKUMO</div>
         </div>
         <div class="item">
-            <img src="{{ asset('assets/images/company/slide/slide_2.jpeg') }}" alt="Second slide">
+            <img src="{{ asset('assets/images/company/slide/slide_2.jpg') }}" alt="Second slide">
             <div class="carousel-caption">欢迎访问株式会社YAKUMO</div>
         </div>
         <div class="item">
