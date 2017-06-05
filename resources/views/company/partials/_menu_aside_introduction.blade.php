@@ -4,20 +4,23 @@
     <div class="block-header">
         <h4>株式会社 YAKUMO</h4>
     </div>
-
-    <div class="content-body" style="padding: 5px 10px">
+    {{--style="padding: 5px 10px"--}}
+    <div class="content-body">
 
         <!-- Company Address -->
-        <div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
             東京都豊島区南池袋３－１８－３５OKビル６０１
         </div>
 
         <!-- Company Telephone -->
-        <a class="btn btn-success btn-block" style="margin-top: 20px;margin-bottom: 20px;" title="TEL / 03-6907-1339">
-            TEL / 03-6907-1339
-        </a>
+        <div class="col-xs-8 col-sm-12 col-md-12">
+            <a class="btn btn-success btn-block" style="margin-top: 20px;margin-bottom: 20px;"
+               title="TEL / 03-6907-1339">
+                TEL / 03-6907-1339
+            </a>
+        </div>
 
-        <div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <div>
                 <span>[営業時間]&nbsp;</span>
                 <span>10:00～18:30  </span>

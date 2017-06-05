@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box row">
     <div class="padding-sm">
 
         <!--公司主页侧边栏：公司简介-->
