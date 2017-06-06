@@ -39,7 +39,8 @@ elixir(function(mix) {
 
         .sass([
             'base.scss',
-            'main.scss'
+            'main.scss',
+            'disable-bootstrap-response-style.scss'
         ], 'public/assets/css/styles.css')
 
         .scripts(basejs.concat([

@@ -1,20 +1,21 @@
+<div style="min-width: 1180px;">
 <div id="top-navbar" class="navbar navbar-default nav_scroll" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            {{--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
+            </button>--}}
             <a class="navbar-brand" href="{{ route('home') }}">
                 <span class="main-color text-bold">株式会社&nbsp;YAKUMO</span></a>
         </div>
 
-        <div class="navbar-collapse collapse">
+        <div id="navbar">
 
             <!-- Left nav -->
-            <ul class="nav navbar-nav" data-smartmenus-id="14739838239025269">
+            <ul class="nav navbar-nav">
                 <li><a href="{{ url("/") }}">主页</a></li>
                 <li><a href="{{ url("/company/business-content") }}">事業内容</a></li>
                 <li><a href="{{ url("/company/activity-info") }}">イベント情報</a></li>
@@ -28,6 +29,7 @@
 
 
     </div><!--/.container -->
+</div>
 </div>
 
 

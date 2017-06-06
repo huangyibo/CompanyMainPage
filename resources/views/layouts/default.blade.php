@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title')株式会社YAKUMO</title>
 
-   {{-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>--}}
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    {{-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>--}}
+
     <meta name="description" content="xx有限公司主页">
     <meta name="author" content="Bob">
 
@@ -24,7 +25,6 @@
 </head>
 
 <body class="{{ route_class() }}-page">
-
 @include('layouts.partials.topnav')
 
 <section class="mastwrap">
@@ -37,7 +37,6 @@
 </section>
 
 @include('layouts.partials.footer')
-
 <script src="{{ elixir('assets/js/scripts.js') }}" charset="utf-8"></script>
 
 @yield('scripts')

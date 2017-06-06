@@ -13,7 +13,7 @@
         </div>
 
         <!-- Company Telephone -->
-        <div class="col-xs-8 col-sm-12 col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <a class="btn btn-success btn-block" style="margin-top: 20px;margin-bottom: 20px;"
                title="TEL / 03-6907-1339">
                 TEL / 03-6907-1339

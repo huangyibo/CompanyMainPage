@@ -4,10 +4,10 @@
 
 @section('content')
     <div class="colom-container">
-        <aside class="col-sm-3 col-md-3 main-col">
+        <aside class="col-xs-3 col-sm-3 col-md-3 main-col">
             @include('company.partials._introduction_menu')
         </aside>
-        <main class="col-sm-9 col-md-9 left-col">
+        <main class="col-xs-9 col-sm-9 col-md-9 left-col">
             <div class="panel panel-default padding-md">
 
                 <div class="panel-body ">
