@@ -21,6 +21,13 @@
         $navbar.removeClass("nav_scroll");
     }
 
+    /**
+     * 设置轮播定时滚动
+     */
+    $('.carousel').carousel({
+        interval: 3000
+    });
+
     function promptRegister() {
         swal({
                 title: "订阅 Laravel 资讯",
