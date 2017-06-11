@@ -1,8 +1,12 @@
 
 <div id="company-about-speech" class="company-business-content">
-    <div class="category-header">
+    {{--<div class="category-header">
         <h4 class=" font3"><i class="fa fa-folder-open-o"></i>Comicup19日本ロリータブランドATELIER BOZ直接参加
         </h4>
+    </div>--}}
+
+    <div>
+        <img class="section_header_img" src="{{ asset('assets/images/company/section_header/header_section_activity_3.png') }}">
     </div>
 
     <div class="content-body" style="padding: 0px 10px">

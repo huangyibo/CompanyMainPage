@@ -1,7 +1,8 @@
 
 <div class="company-business-content">
-    <div class="category-header">
-        <h4 class=" font3"><i class="fa fa-folder-open-o"></i> 弊社について</h4>
+    <div class="">
+        {{--<h4 class=" font3"><i class="fa fa-folder-open-o"></i> 弊社について</h4>--}}
+        <img class="section_header_img" src="{{ asset('assets/images/company/section_header/section_header.png') }}">
     </div>
 
     <div class="content-body" style="padding: 0px 10px">

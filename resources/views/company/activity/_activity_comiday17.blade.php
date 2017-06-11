@@ -1,7 +1,10 @@
 
 <div id="company-about-speech" class="company-business-content">
-    <div class="category-header">
+    {{--<div class="category-header">
         <h4 class=" font3"><i class="fa fa-folder-open-o"></i> Comiday17韓国ロリータブランドBaroque直接参加</h4>
+    </div>--}}
+    <div>
+        <img class="section_header_img" src="{{ asset('assets/images/company/section_header/section_header_activity_1.png') }}">
     </div>
 
     <div class="content-body" style="padding: 0px 10px">

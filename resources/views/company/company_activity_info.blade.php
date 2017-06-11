@@ -21,7 +21,7 @@
                         <!-- Activity: comiday17 -->
                         @include('company.activity._activity_comiday17')
                         <!-- Activity: comiday18 -->
-                        @include('company.activity._activity_comiday18')\
+                        @include('company.activity._activity_comiday18')
                         <!-- Activity: comiday19 -->
                         @include('company.activity._activity_comiday19')
 

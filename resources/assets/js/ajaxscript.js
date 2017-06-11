@@ -92,18 +92,20 @@ $(document).ready(function () {
                success: function (data) {
 
                    if(data.status == 'ok'){
-                       $('#contact-us-alert-success').removeClass('hidden');
-                       $('#contact-us-alert-success').text('Send Successfully!');
+                      /* $('#contact-us-alert-success').removeClass('hidden');
+                       $('#contact-us-alert-success').text('Send Successfully!');*/
                        clearContactForm();
-
+                       swal("提交成功!", "您的咨询信息已经成功发送到公司客服!", "success");
                    }else {
                        setErrorAlert("Submit Failed!");
+                       swal("发送失败!", "您所在的网络不稳定，请稍后重发!", "error");
                    }
                    $("#btn_submit_contact_info").removeClass('disabled');
                },
                error: function (e) {
                    setErrorAlert("Submit Failed!");
                    $("#btn_submit_contact_info").removeClass('disabled');
+                   swal("发送失败!", "您所在的网络不稳定，请稍后重发!", "error");
                }
            });
        }
