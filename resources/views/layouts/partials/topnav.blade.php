@@ -16,7 +16,7 @@
 
             <!-- Left nav -->
             <ul class="nav navbar-nav">
-                <li><a href="{{ url("/") }}">主页</a></li>
+                <li><a href="{{ url("/") }}">ホームページ</a></li>
                 <li><a href="{{ url("/company/business-content") }}">事業内容</a></li>
                 <li><a href="{{ url("/company/activity-info") }}">イベント情報</a></li>
                 <li><a href="{{ url("/company/club-summary") }}">会社概要</a></li>

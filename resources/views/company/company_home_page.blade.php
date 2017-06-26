@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', '主页' . ' | ')
+@section('title', 'ホームページ' . ' | ')
 
 @section('content')
     <div class="colom-container">
@@ -13,7 +13,7 @@
                 <div class="panel-body ">
 
                     <div class="block-header">
-                        <h2>HOMEPAGE </h2>
+                        <h2>HOMEPAGE</h2>
                     </div>
 
                     <div class="content-body">

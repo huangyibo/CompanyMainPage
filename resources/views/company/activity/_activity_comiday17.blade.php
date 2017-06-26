@@ -4,7 +4,7 @@
         <h4 class=" font3"><i class="fa fa-folder-open-o"></i> Comiday17韓国ロリータブランドBaroque直接参加</h4>
     </div>--}}
     <div>
-        <img class="section_header_img" src="{{ asset('assets/images/company/section_header/section_header_activity_1.png') }}">
+        <img class="section_header_img" src="{{ asset('assets/images/company/section_header/header_section_activity_1.png') }}">
     </div>
 
     <div class="content-body" style="padding: 0px 10px">

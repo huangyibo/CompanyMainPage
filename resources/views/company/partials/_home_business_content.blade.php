@@ -5,7 +5,7 @@
     </div>--}}
 
     <div>
-        <img class="section_header_img" src="{{ asset('assets/images/company/section_header/section_header_business_content.png') }}">
+        <img class="section_header_img" src="{{ asset('assets/images/company/section_header/section_header_2.png') }}">
     </div>
 
 
