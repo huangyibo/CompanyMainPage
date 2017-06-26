@@ -8,15 +8,15 @@
     <!-- 轮播（Carousel）项目 -->
     <div class="carousel-inner" style="width:100%">
         <div class="item active">
-            <img src="http://172.104.67.21/assets/images/company/slide/slide_1.jpg" style="width: 100%" alt="First slide">
+            <img src="{{ asset('assets/images/company/slide/slide_1.jpg') }}" alt="First slide">
             <div class="carousel-caption"></div>
         </div>
         <div class="item">
-            <img src="http://172.104.67.21/assets/images/company/slide/slide_2.jpg" alt="Second slide">
+            <img src="{{ asset('assets/images/company/slide/slide_2.jpg') }}" alt="Second slide">
             <div class="carousel-caption"></div>
         </div>
         <div class="item">
-            <img src="http://172.104.67.21/assets/images/company/slide/slide_3.jpg" alt="Third slide">
+            <img src="{{ asset('assets/images/company/slide/slide_3.jpg') }}" alt="Third slide">
             <div class="carousel-caption"></div>
         </div>
     </div>
