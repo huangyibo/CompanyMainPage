@@ -4,6 +4,22 @@
 
 var submitContactUsInfoUrl = "/company/contact-us";
 
+function isEmail( email_address )
+{
+    var regex = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+    if ( regex.test( email_address ) )
+    {
+
+        var user_name = email_address.replace( regex, "$1" );
+        var domain_name = email_address.replace( regex, "$2" );
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
 function invalidateContactInfo(){
     var name = $('input[name=name]').val().trim();
     if(isEmpty(name)){
@@ -15,6 +31,11 @@ function invalidateContactInfo(){
         setErrorAlert("メールアドレス是必須項目です！");
         return false;
     }
+    if(!isEmail(email)){
+        setErrorAlert("入力されたメールアドレスが有効ではありません！");
+        return false;
+    }
+
     var contact_content = $('#contact_content').val().trim();
     if(isEmpty(contact_content)){
         setErrorAlert("お問い合わせ内容是必須項目です！");
@@ -95,17 +116,17 @@ $(document).ready(function () {
                       /* $('#contact-us-alert-success').removeClass('hidden');
                        $('#contact-us-alert-success').text('Send Successfully!');*/
                        clearContactForm();
-                       swal("提交成功!", "您的咨询信息已经成功发送到公司客服!", "success");
+                       swal("Success!", "あなたのメッセージが正常にコンサルティング会社の顧客サービスに送信されました!", "success");
                    }else {
                        setErrorAlert("Submit Failed!");
-                       swal("发送失败!", "您所在的网络不稳定，请稍后重发!", "error");
+                       swal("送信に失敗しました!", "お使いのネットワークが不安定で、後で再送信してください!", "error");
                    }
                    $("#btn_submit_contact_info").removeClass('disabled');
                },
                error: function (e) {
                    setErrorAlert("Submit Failed!");
                    $("#btn_submit_contact_info").removeClass('disabled');
-                   swal("发送失败!", "您所在的网络不稳定，请稍后重发!", "error");
+                   swal("送信に失敗しました!", "お使いのネットワークが不安定で、後で再送信してください!", "error");
                }
            });
        }
