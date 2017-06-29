@@ -14,7 +14,7 @@
 
         <!-- Company Telephone -->
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <a class="btn btn-success btn-block" style="margin-top: 20px;margin-bottom: 20px;"
+            <a class="btn btn-success btn-block" style="margin-top: 20px;margin-bottom: 20px;background-color:rgb(85,146,177);border-color:rgb(85,146,177);"
                title="TEL / 03-6907-1339">
                 TEL / 03-6907-1339
             </a>

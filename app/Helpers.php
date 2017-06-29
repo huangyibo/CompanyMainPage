@@ -116,5 +116,5 @@ function posts_show_form($post){
 }
 
 function get_contact_us_email(){
-    return 'info@yakumo-trading.co.jp';
+    return 'info@yakumo-trading.co.jp'; 
 }
